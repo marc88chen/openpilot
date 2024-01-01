@@ -284,7 +284,7 @@ class CarInterface(CarInterfaceBase):
     tune.kpBP = [0.]
     tune.kpV = [1.]
     tune.kiBP = [0., 1., 3.]
-    tune.kiV = [.1, .4, 1.]
+    tune.kiV = [.05, .5, 1.]
 
     return ret
 
