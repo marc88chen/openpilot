@@ -282,7 +282,7 @@ class CarInterface(CarInterfaceBase):
     tune.deadzoneBP = [0., 9.]
     tune.deadzoneV = [.0, .15]
     tune.kpBP = [0., 8,  16]
-    tune.kpV = [1.3, 1.6, 1.]
+    tune.kpV = [1.5, 2.0, 1.]
     tune.kiBP = [0., 1., 3.]
     tune.kiV = [.05, .5, 1.]
 
