@@ -282,7 +282,7 @@ class CarInterface(CarInterfaceBase):
       ret.stopAccel = -2.0
       ret.vEgoStopping = 0.1
       ret.vEgoStarting = 0.1
-      ret.stoppingDecelRate = 0.1  # reach stopping target smoothly
+      ret.stoppingDecelRate = 0.3  # reach stopping target smoothly
     tune.kpBP = [0.,]
     tune.kiBP = [0., 3.]
     tune.kpV = [1.,]
