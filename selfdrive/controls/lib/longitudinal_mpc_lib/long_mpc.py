@@ -64,7 +64,7 @@ CRUISE_MAX_ACCEL = 1.6
 
 def get_jerk_factor(personality=log.LongitudinalPersonality.standard):
   if personality==log.LongitudinalPersonality.relaxed:
-    return 1.2
+    return 1.5
   elif personality==log.LongitudinalPersonality.standard:
     return 1.0
   elif personality==log.LongitudinalPersonality.aggressive:
@@ -75,7 +75,7 @@ def get_jerk_factor(personality=log.LongitudinalPersonality.standard):
 
 def get_T_FOLLOW(personality=log.LongitudinalPersonality.standard):
   if personality==log.LongitudinalPersonality.relaxed:
-    return 2.0
+    return 2.1
   elif personality==log.LongitudinalPersonality.standard:
     return 1.65
   elif personality==log.LongitudinalPersonality.aggressive:
@@ -88,7 +88,7 @@ def get_dynamic_follow(v_ego, personality=log.LongitudinalPersonality.standard):
   # The Dynamic follow function is adjusted by Marc(cgw1968-5779)
   if personality==log.LongitudinalPersonality.relaxed:
     x_vel =  [0.,  6,   10., 10.01, 15., 27.7]
-    y_dist = [1.8, 1.8, 1.9,  2.0, 2.0, 2.2]
+    y_dist = [1.8, 1.9, 2.0,  2.0, 2.0, 2.2]
   elif personality==log.LongitudinalPersonality.standard:
     x_vel =  [0.,  6,   10., 10.01, 15., 27.7]
     y_dist = [1.3, 1.4, 1.4, 1.42,  1.45, 1.50]
