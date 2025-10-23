@@ -64,7 +64,7 @@ CRUISE_MAX_ACCEL = 1.6
 
 def get_jerk_factor(personality=log.LongitudinalPersonality.standard):
   if personality==log.LongitudinalPersonality.relaxed:
-    return 1.0
+    return 1.2
   elif personality==log.LongitudinalPersonality.standard:
     return 1.0
   elif personality==log.LongitudinalPersonality.aggressive:
@@ -75,9 +75,9 @@ def get_jerk_factor(personality=log.LongitudinalPersonality.standard):
 
 def get_T_FOLLOW(personality=log.LongitudinalPersonality.standard):
   if personality==log.LongitudinalPersonality.relaxed:
-    return 1.9
+    return 2.0
   elif personality==log.LongitudinalPersonality.standard:
-    return 1.6
+    return 1.65
   elif personality==log.LongitudinalPersonality.aggressive:
     return 1.3
   else:
